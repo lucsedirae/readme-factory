@@ -21,8 +21,7 @@ return inquirer
 }
 
 function generateReadme(answers) {
-    return `
-    #${answers.title}
+    return `# ${answers.title}
     ${answers.description}
     `
 }
@@ -30,7 +29,7 @@ function generateReadme(answers) {
 promptUser().then(function(answers){
     const readme=generateReadme(answers);
     
-    return writeFileAsync("readme.md", readme);
+    return writeFileAsync("README.md", readme);
 }).then(function(){
     console.log("Successfully created README");
 }).catch(function(err){
