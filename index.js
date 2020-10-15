@@ -7,6 +7,16 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 console.log("Welcome to README-factory. To generate a professional README enter the requested information.")
 
+promptUser().then(function(answers){
+    const readme=generateReadme(answers);
+    
+    return writeFileAsync("README.md", readme);
+}).then(function(){
+    console.log("Successfully created README");
+}).catch(function(err){
+    console.log(err);
+});
+
 function promptUser() {
 return inquirer
     .prompt([{
@@ -34,6 +44,18 @@ return inquirer
     {
         message: "Enter instructions for contributing:",
         name: "contribute"
+    },
+    {
+        message: "Enter testing libraries used and commands required to run tests:",
+        name: "testing"
+    },
+    {
+        message: "Enter your email address:",
+        name: "email"
+    },
+    {
+        message: "Enter your developer profile URL:",
+        name: "profileLink"
     }]);
 }
 
@@ -55,6 +77,10 @@ ${answers.description}
 
 * [Contributions](#contributions)
 
+* [Testing](#testing)
+
+* [Questions](#questions)
+
 <hr>
 
 ## Installation
@@ -69,15 +95,12 @@ ${answers.license}
 ## Contributions
 ${answers.contribute}
 
+## Testing
+${answers.testing}
+
+## Questions
+Have questions on this application? Contact me via:
+Email: ${answers.email}
+My Developer Profile: ${answers.profileLink}   
 `
 }
-
-promptUser().then(function(answers){
-    const readme=generateReadme(answers);
-    
-    return writeFileAsync("README.md", readme);
-}).then(function(){
-    console.log("Successfully created README");
-}).catch(function(err){
-    console.log(err);
-});
