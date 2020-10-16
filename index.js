@@ -62,6 +62,10 @@ return inquirer
 function generateReadme(answers) {
 return `# ${answers.title}
 
+![GitHub](https://img.shields.io/github/license/LucSedirae/readme-factory?color=39%2C%20255%2C%200%20&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/LucSedirae/readme-factory?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/LucSedirae/readme-factory?style=for-the-badge)
+
 ## Description
 ${answers.description}
 
@@ -90,7 +94,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-${answers.license}
+Created under the ${answers.license} license. See LICENSE.txt for more information.
 
 ## Contributions
 ${answers.contribute}
