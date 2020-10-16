@@ -54,7 +54,7 @@ return inquirer
         name: "email"
     },
     {
-        message: "Enter your developer profile URL:",
+        message: "Enter your GitHub profile URL:",
         name: "profileLink"
     }]);
 }
@@ -103,8 +103,8 @@ ${answers.contribute}
 ${answers.testing}
 
 ## Questions
-Have questions on this application? Contact me via:
-Email: ${answers.email}
-My Developer Profile: ${answers.profileLink}   
+Have questions on this application? Contact me via:<br>
+Email: ${answers.email} <br>
+My GitHub Profile: ${answers.profileLink} <br>   
 `
 }
