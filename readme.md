@@ -4,8 +4,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/LucSedirae/readme-factory?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/LucSedirae/readme-factory?style=for-the-badge)
 
-![GitHub All Releases](https://img.shields.io/github/license/LucSedirae/readme-factory?style=flat-square)
-
 ## Description
 This is a command line interface application that takes in information about an application and generates a professional README.md file.
 
