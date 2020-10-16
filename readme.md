@@ -1,5 +1,7 @@
 # README.factory
 
+![GitHub All Releases](https://img.shields.io/github/license/LucSedirae/readme-factory?style=flat-square)
+
 ## Description
 This is a command line interface application that takes in information about an application and generates a professional README.md file.
 
