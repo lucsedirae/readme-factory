@@ -56,15 +56,23 @@ return inquirer
     {
         message: "Enter your GitHub profile URL:",
         name: "profileLink"
+    },
+    {
+        message: "Enter your GitHub Username: ",
+        name: "gitname"
+    },
+    {
+        message: "Enter your GitHub repo name: ",
+        name: "repo"
     }]);
 }
 
 function generateReadme(answers) {
 return `# ${answers.title}
 
-![GitHub](https://img.shields.io/github/license/LucSedirae/readme-factory?color=39%2C%20255%2C%200%20&style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/LucSedirae/readme-factory?style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/LucSedirae/readme-factory?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/${answers.gitname}/${answers.repo}?color=39%2C%20255%2C%200%20&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/${answers.gitname}/${answers.repo}?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/${answers.gitname}/${answers.repo}?style=for-the-badge)
 
 ## Description
 ${answers.description}

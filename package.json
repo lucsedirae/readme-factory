@@ -1,0 +1,24 @@
+{
+  "name": "readme-factory",
+  "version": "1.0.0",
+  "description": "Readme Generator",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucsedirae/readme-factory.git"
+  },
+  "author": "Jon Deavers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucsedirae/readme-factory/issues"
+  },
+  "homepage": "https://github.com/lucsedirae/readme-factory#readme"
+}
