@@ -1,11 +1,11 @@
-# README-Factory
+# Org-Chart
 
-![GitHub](https://img.shields.io/github/license/LucSedirae/readme-factory?color=39%2C%20255%2C%200%20&style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/LucSedirae/readme-factory?style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/LucSedirae/readme-factory?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/LucSedirae/org-chart?color=39%2C%20255%2C%200%20&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/LucSedirae/org-chart?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/LucSedirae/org-chart?style=for-the-badge)
 
 ## Description
-This is a command line interface that takes in information about an application and generates a professional README.md file
+This application will allow an employer to enter information about individual team members and arrange that information on an HTML file that displays the team organizational structure
 
 <hr>
 
@@ -26,19 +26,20 @@ This is a command line interface that takes in information about an application 
 <hr>
 
 ## Installation
-Download from GitHub repo https://github.com/lucsedirae/readme-factory. To execute, open terminal and navigate to directory containing index.js. Type "node index.js" to execute. NOTE: This will require installation of node.js to provide runtime environment.
+Clone repository and run `<npm i>` in the root directory. To execute program enter `<node app.js>`
 
 ## Usage
-This application can be used for any application type. Simply run the program via the command line and follow the prompts. Be as descriptive as possible. Make sure to provide information for each question in order to fully populate the final .md file. The README file for this project was created using the tool. README-factory uses inquirer.js and util libraries.
+Manager "Henry" is being tasked with documenting his team's structure with pertinent information about each member. With Org-Chart, he quickly inputs the required data and generates an HTML file deliverable
 
 ## License
-Created under the MIT license. See LICENSE.txt for more information.
+Created under the GPL 3.0 license. See LICENSE.txt for more information.
 
 ## Contributions
-This project is not currently accepting community contributions.
+This project is not currently accepting submissions
 
 ## Testing
-No additional libraries installed for testing. All testing has been performed manually.
+Jest<br>
+To run tests, run command `<npm run test>`
 
 ## Questions
 Have questions on this application? Contact me via:<br>
