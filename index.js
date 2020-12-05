@@ -10,7 +10,7 @@ console.log("Welcome to README-factory. To generate a professional README enter 
 promptUser().then(function(answers){
     const readme=generateReadme(answers);
     
-    return writeFileAsync("README.md", readme);
+    return writeFileAsync("newREADME.md", readme);
 }).then(function(){
     console.log("Successfully created README");
 }).catch(function(err){
